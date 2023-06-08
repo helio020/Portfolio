@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hélio Ribeiro</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/98891c3f2a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="hero-container">
+    <section class="hero-container" id="index">
         <header>
             <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Projetos</li>
-                    <li>Tecnologias</li>
-                    <li>Contato</li>
+                <ul class="nav-menu">
+                    <a class="list-item" href="#index"><li>Home</li></a>
+                    <a class="list-item" href="#profile"><li>Projetos</li></a>
+                    <a class="list-item" href="#projects"><li>Tecnologias</li></a>
+                    <a class="list-item" href="#contact"><li>Contato</li></a>
                 </ul>
             </nav>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
         </header>
         <h1>Procurando um desenvolvedor FullStack?</h1>
         <svg class="arrows">
@@ -25,27 +31,45 @@
             <path class="a2" d="M0 20 L30 52 L60 20"></path>
             <path class="a3" d="M0 40 L30 72 L60 40"></path>
         </svg>
-    </div>
-    <div class="content-container">
+    </section>
+
+    <section class="content-container" id="profile">
         <div class="profile-container">
             <div class="profile-content">
                 <div class="profile-card">
-                    <img class="profile-image" src="./IMG_20210721_184604430.jpg" />
+                    <img class="profile-image" src="./assets/IMG_20210721_184604430.jpg" />
                     <span class="name-text">Hélio Ribeiro</span>
                     <span class="profile-text">
                         Foco, disciplina e consistência.
                         Vamos revolucionar o mercado de tecnologia juntos?
                     </span>
-                    <a href="https://www.linkedin.com/in/h%C3%A9lio-ribeiro-04b44b15b/" target="_blank">
-                        <button class="profile-button">
-                            Conhecer linkedin!
-                        </button>
-                    </a>
-                    <div class="divider"></div>   
-                    <div class="icons-container">
-                        <img class="icon-item" src="./js.png" />
-                        <img class="icon-item"  src="./node.png" />
-                        <img class="icon-item"  src="./react.png" />
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/h%C3%A9lio-ribeiro-04b44b15b/" target="_blank">
+                            <button class="profile-button" id="linkedin"></button>
+                        </a>
+                        <a href="https://github.com/helio020" target="_blank">
+                            <button class="profile-button" id="github"></button>
+                        </a>
+                        <a href="https://www.instagram.com/helio_777/" target="_blank">
+                            <button class="profile-button" id="instagram"></button>
+                        </a>
+                        <a href="https://www.facebook.com/helio.junior.7967" target="_blank">
+                            <button class="profile-button" id="facebook"></button>
+                        </a>
+                    </div>
+                    <div class="divider"></div> 
+                    <h4>Tecnologias: HTML, CSS, JavaScript, ReactJS, Git, GitHub</h4>  
+                    <div class="tecnologies-container">
+                        <div class="tecnologies-content">
+                          <div class="tecnologies" id="html"></div>
+                          <div class="tecnologies" id="css"></div>
+                          <div class="tecnologies" id="java-script"></div>
+                        </div>
+                        <div class="tecnologies-content">
+                          <div class="tecnologies" id="react"></div>
+                          <div class="tecnologies" id="git"> </div>
+                          <div class="tecnologies" id="github2"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -55,45 +79,76 @@
                 Sou apaixonado pelo mundo da tecnologia e programação, espero um dia me tornar um grande profissional nessa área.
             </p>
         </div>
-    </div>
+    </section>
 
-    <div class="content-container">
+    <section class="content-container" id="projects">
         <div class="project-container">
-            <div class="project-content">
-
-                <div class="position-container right">
-                    <div class="project-card">
-                        <image class="project-image" src="./batmanimage.jpeg" />
-                        <p class="project-text">
-                            Esse foi meu primeiro projeto feito com HTML e CSS, fiquei muito satisfeito com o resultado e isso me motivou a 
-                            continuar programando e aprender mais sobre esse universo. Adorei fazer o projeto, foi super divertido e bacana. 
-                            Com esse projeto os conhecimentos de HTML e CSS foram mais fixados em minha mente.
-                        </p>
+            <div class="slider">
+                <div class="slides-img">
+        
+                    <a href="https://github.com/helio020/Star-Wars-Guide" target="_blank">
+                    <div class="projects-img" id="current-img">
+                        <img src="./assets/Star-Wars-Guide.jpeg" alt="imagem do projeto">
                     </div>
-                </div>
-
-                <div class="position-container left">
-                    <div class="project-card card-reverse">
-                        <image class="project-image image-reverse" src="./wppimage.jpeg" />
-                        <p class="project-text">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum maxime dolorum, distinctio dolor, 
-                            porro suscipit sit a optio in itaque est placeat, aperiam pariatur impedit. Rerum tempora dolor natus enim!
-                        </p>
+                    </a>
+        
+                    <a href="https://github.com/helio020/Calculadora-IMC" target="_blank">
+                    <div class="projects-img">
+                        <img src="./assets/Calculadora-IMC.jpeg" alt="imagem do projeto">
                     </div>
+                    </a>
+        
                 </div>
-               
-                <div class="position-container right">
-                    <div class="project-card">
-                        <image class="project-image" src="./wppimage.jpeg" />
-                        <p class="project-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto suscipit ea optio facere dolorum sapiente 
-                            aliquam id maiores nesciunt excepturi. Quasi illo ea quae quo explicabo officia ducimus omnis illum.
-                        </p>
-                    </div>
-                </div>
-
             </div>
+            <div class="btn-container">
+                <div class="slides-btn" id="btn-back">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="slides-btn" id="btn-next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <span class="projects-description">
+                *Ao clicar no projeto você será redirecionado ao GitHub. Caso queira visualizar 
+                a aplicação em seu navegador, vá até o arquivo README.md e lá você encontrará o link.
+            </span>
         </div>
-    </div>
+    </section>
+
+    <section class="content-container" id="contact">
+        <div class="contact-content">
+            <form action="https://formspree.io/f/xdovrygj" method="POST" id="contact-form" target="_blank">
+                <h3>Preencha os campos abaixo para entrar em contato comigo.</h3>
+                <label>
+                    Seu nome:*
+                    <input type="text" name="name" style="display: block;" placeholder="Nome Sobrenome" id="input-name" required>
+                </label>
+                <label>
+                    Seu e-mail:*
+                    <input type="email" name="email" style="display: block;" placeholder="exemplo@email.com" id="input-email" required>
+                </label>
+                <label>
+                    Seu telefone:
+                    <input type="tel" name="phone" id="input-fone" style="display: block;" placeholder="(11) 98888-8888" minlength="15" 
+                    maxlength="15">
+                </label>
+                <label>
+                    Assunto:*
+                    <select name="subject" id="select-subject" style="display: block;">
+                      <option value="orçamento">Orçamento</option>
+                      <option value="recrutamento">Recrutamento</option>
+                    </select>
+                </label>
+                <label>
+                    Sua mensagem:*
+                    <textarea name="message" style="display: block;" placeholder="Digite sua mensagem" id="input-textarea" required></textarea>
+                </label>
+                <h6>* Campos obrigatórios</h6>
+                <button type="submit" id="send-button">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
 </body>
 </html>
