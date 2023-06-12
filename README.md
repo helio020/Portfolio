@@ -1,3 +1,3 @@
 # Portfolio
 Fique a vontade para acessar meu portfolio.
-Para acessar ['clique aqui']('https://helio020.github.io/Portfolio/').
+O Portfolio está hospedado no *Git Hub Pages*.Para acessar [clique aqui](https://helio020.github.io/Portfolio/).
