@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 * {
     margin: 0;
@@ -24,7 +24,7 @@ header {
     justify-content: flex-end;
     width: 100%;
     height: 40px;
-  }
+}
 
 .hero-container {
     height: 100vh;
@@ -91,20 +91,40 @@ a {
     -webkit-animation: arrow 2s infinite;
 }
 
-@keyframes arrow 
-{
-0% {opacity: 0}
-40% {opacity: 1}
-80% {opacity: 0}
-100% {opacity: 0}
+@keyframes arrow {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
 }
 
-@-webkit-keyframes arrow
-{
-0% {opacity: 0}
-40% {opacity: 1}
-80% {opacity: 0}
-100% {opacity: 0}
+@-webkit-keyframes arrow {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
 }
 
 .arrows path.a1 {
@@ -148,7 +168,7 @@ a {
     flex-direction: column;
     align-items: center;
     width: 370px;
-    height: 500px;
+    height: 600px;
     background: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -180,7 +200,7 @@ a {
     height: 50px;
     margin-top: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .profile-button {
@@ -195,16 +215,6 @@ a {
 
 .profile-button:hover {
     transform: scale(1.2);
-}
-
-#facebook {
-    background-image: url(./assets/facebook.png);
-    background-size: cover;
-} 
-
-#instagram {
-    background-image: url(./assets/instagram.png);
-    background-size: cover;
 }
 
 #linkedin {
@@ -250,7 +260,7 @@ h4 {
     border-radius: 10px;
 }
 
-#html { 
+#html {
     background-image: url(./assets/html.png);
     background-size: cover;
     background-color: orange;
@@ -283,6 +293,21 @@ h4 {
     background-image: url(./assets/github2.png);
     background-size: cover;
     background-position-y: 50%;
+}
+
+#node {
+    background-image: url(./assets/node.png);
+    background-size: cover;
+}
+
+#postgresql {
+    background-image: url(./assets/postgresql-logo.png);
+    background-size: cover;
+}
+
+#express {
+    background-image: url(./assets/express-logo.jpg);
+    background-size: cover;
 }
 
 .profile-sinopse {
@@ -441,7 +466,7 @@ textarea {
     background-color: #D870DB;
 }
 
-#send-button:hover{
+#send-button:hover {
     color: #fff;
 }
 
@@ -480,7 +505,7 @@ textarea {
         background-color: #D870DB;
         margin: 5px auto;
     }
-    
+
     .profile-container {
         flex-direction: column;
         align-items: center;
@@ -498,7 +523,7 @@ textarea {
         margin-left: 3px;
     }
 
-    .profile-sinopse{
+    .profile-sinopse {
         margin: 0;
         width: 93%;
     }
@@ -587,7 +612,7 @@ textarea {
         color: #fff;
     }
 }
-    
+
 @media (min-width: 420px) and (max-width: 1024px) {
     .hero-container {
         justify-content: space-between;
@@ -655,7 +680,7 @@ textarea {
 
     .profile-card {
         width: 390px;
-        height: 520px;
+        height: 620px;
         margin-top: 70px;
     }
 
@@ -664,4 +689,4 @@ textarea {
         width: 410px;
         margin-bottom: 15px;
     }
-} 
+}
