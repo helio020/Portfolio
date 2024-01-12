@@ -160,7 +160,7 @@ a {
 }
 
 .profile-content {
-    width: 30%;
+    width: 50%;
 }
 
 .profile-card {
@@ -680,13 +680,39 @@ textarea {
 
     .profile-card {
         width: 390px;
-        height: 620px;
-        margin-top: 70px;
+        height: 460px;
+        margin-top: 0px;
     }
 
     .profile-sinopse {
         margin: 0;
-        width: 410px;
-        margin-bottom: 15px;
+        width: 710px;
+        font-size: 14px;
+    }
+
+    .profile-image {
+        width: 60px;
+    }
+
+    .name-text {
+        font-size: 14px;
+    }
+
+    .profile-text {
+        margin-top: 0px;
+        font-size: 15px;
+    }
+
+    .social-media {
+        margin-top: 2px;
+    }
+
+    .divider {
+        margin: 3px;
+    }
+
+    .profile-card h4 {
+        font-size: 1px;
+        visibility: hidden;
     }
 }
